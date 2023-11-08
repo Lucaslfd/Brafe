@@ -18,15 +18,15 @@ body {
     padding: 20px 0;
 }
 
-.menu-container::after, .menu-container::before {
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.container::after, .container::before {
     content: '';
     display: table;
     clear: both;
-}
-
-.menu-container {
-    max-width: 960px;
-    margin: 0 auto;
 }
 
 .menu-logo {
@@ -78,4 +78,48 @@ body {
 .intro p {
     font-style: italic;
     font-size: 1.125em;
+}
+
+.sobre {
+    padding: 60px 0;
+}
+
+.sobre h2 {
+    text-align: center;
+    font-size: 2.25em;
+    margin-bottom: 60px;
+}
+
+.sobre-item {
+    width: 460px;
+    float: left;
+    margin: 0 10px;
+}
+
+.sobre-item img {
+    display: block;
+    max-width: 100%;
+}
+
+.sobre-item h3 {
+    font-size: 2.25em;
+    background: var(--black_um);
+    width: 220px;
+    line-height: 1em;
+    color: var(--white_normal);
+    font-style: italic;
+    font-weight: normal;
+    text-align: center;
+    padding: 5px 0 10px 0;
+    top: -25px;
+    position: relative;
+}
+
+.sobre > p {
+    font-size: 1.125em;
+    line-height: 1.4em;
+    font-style: italic;
+    text-align: center;
+    margin: 20px auto;
+    max-width: 460px;
 }

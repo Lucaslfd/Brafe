@@ -1,3 +1,4 @@
+
 :root{
     --black_um: #252525;
     --white_normal: #FFFFFF;
@@ -310,3 +311,80 @@ h2.produtos-mineiro::before {
     float: right;
 }
 
+@media (max-width: 739px) {
+    .menu {
+        text-align: center;
+    }
+
+    a.menu-logo {
+        float: none;
+        margin: 0 auto;
+    }
+
+    .menu-nav {
+        float: none;
+        clear: both;
+    }
+
+    .intro {
+        padding: 40px 0;
+    }
+
+    .container {
+        max-width: 320px;
+    }
+
+    .sobre-item {
+        width: 300px;
+        margin: 0 auto;
+    }
+
+    .produtos-item {
+        margin: 0 auto 20px auto;
+    }
+
+    .locais {
+        max-width: 300px;
+    }
+
+    .locais-item > div,
+    .locais-item img {
+        width: 300px;
+        margin: 0px;
+    }
+
+    .assine-info, .assine form, .assine input {
+        width: 300px;
+        margin: 10px 0 0 0;
+    }
+
+    .footer p {
+        float: none;
+        margin: 0px;
+    }
+
+    .footer  img {
+        float: none;
+        margin: 10px 0;
+    }
+}
+
+@media (min-width: 740px) and (max-width: 980px) {
+    .container,
+    .locais {
+        max-width: 720px;
+    }
+
+    .sobre-item,
+    .locais-item > div,
+    .locais-item img,
+    .assine-info,
+    .assine form,
+    .assine input {
+        width: 340px;
+    }
+
+    .produtos-item {
+        width: 220px;
+    }
+}

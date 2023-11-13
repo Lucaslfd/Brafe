@@ -1,5 +1,11 @@
 /* Reset */
 
+:root{
+    --black_um: #252525;
+    --white_normal: #FFFFFF;
+    --color_secundary: #e7e4d8;
+}
+
 body, h1, h2, h3, p, ul {
 	padding: 0px;
 	margin: 0px;
@@ -7,7 +13,7 @@ body, h1, h2, h3, p, ul {
 
 body {
 	font-family: Georgia, serif;
-	color: #252525;
+	color: var(--black_um);
 }
 
 * {
@@ -22,13 +28,25 @@ img {
 /* Menu */
 
 .menu {
-	background: #252525;
+	background: var(--black_um);
+	padding: 15px 0;
+}
+
+.menu-nav ul {
+	float: right;
+}
+
+.menu-nav ul li {
+	display: inline-block;
 }
 
 .menu-nav a {
+	display: block;
 	text-decoration: none;
-	color: #fff;
+	color: var(--white_normal);
 	font-size: 1.125em;
+	padding: 10px;
+	margin-left: 10px;
 }
 
 /* Intro */
@@ -36,7 +54,9 @@ img {
 .intro {
 	background: url('../img/bg-intro.jpg') no-repeat center center;
 	background-size: cover;
-	color: #fff;
+	color: var(--white_normal);
+	padding: 150px 0;
+	text-align: center;
 }
 
 .intro h1 {
@@ -49,7 +69,8 @@ img {
 	display: block;
 	width: 20px;
 	height: 4px;
-	background: #fff;
+	background: var(--white_normal);
+	margin: 10px auto;
 }
 
 .intro p {
@@ -59,37 +80,56 @@ img {
 
 /* Sobre */
 
+.sobre {
+	padding: 60px 0;
+}
+
 .sobre h2 {
 	font-size: 2.25em;
+	text-align: center;
+	margin-bottom: 60px;
 }
 
 .sobre-item h3 {
 	font-size: 2.25em;
 	line-height: 1em;
-	background: #252525;
-	color: #fff;
+	background: var(--black_um);
+	color: var(--white_normal);
 	font-style: italic;
 	font-weight: normal;
 	text-align: center;
 	position: relative;
+	width: 220px;
+	padding: 5px 0 10px 0;
+	top: -25px;
 }
 
 .sobre > p {
 	font-size: 1.125em;
 	line-height: 1.4em;
 	font-style: italic;
+	max-width: 460px;
+	margin: 20px auto;
+	text-align: center;
 }
 
 /* Produtos */
 
 .produtos {
-	background: #e7e4d8;
+	background: var(--color_secundary);
 	border-top: 3px solid #d6d3c8;
 	border-bottom: 3px solid #d6d3c8;
+	padding: 60px 0;
+}
+
+.produtos-item {
+	margin-bottom: 40px;
 }
 
 .produtos-item h2 {
 	font-size: 2.25em;
+	text-align: center;
+	margin-bottom: 20px;
 }
 
 .produtos-item h2::before {
@@ -99,8 +139,9 @@ img {
 	height: 100px;
 	background: currentColor;
 	border-radius: 50%;
-	border: 5px solid #e7e4d8;
+	border: 5px solid var(--color_secundary);
 	box-shadow: 0 0 0 5px currentColor;
+	margin: 20px auto;
 }
 
 h2.produtos-paulista::before {
@@ -121,24 +162,39 @@ h2.produtos-mineiro::before {
 }
 
 .produtos-btn {
-	border: 3px solid #252525;
-	color: #252525;
+	border: 3px solid var(--black_um);
+	color: var(--black_um);
 	text-decoration: none;
 	text-align: center;
 	font-size: 1.125em;
 	font-weight: bold;
 	text-transform: uppercase;
+	display: block;
+	width: 180px;
+	padding: 15px 0;
+	margin: 0 auto;
 }
 
 /* Locais */
 
+.locais {
+	padding: 60px 0;
+}
+
+.locais-item {
+	margin-bottom: 40px;
+}
+
 .locais-item h2 {
 	font-size: 2.25em;
+	margin-bottom: 20px;
 }
 
 .locais-item p {
 	font-size: 1.125em;
 	line-height: 1.4em;
+	max-width: 320px;
+	margin-bottom: 40px;
 }
 
 .locais-item a {
@@ -146,13 +202,15 @@ h2.produtos-mineiro::before {
 	text-transform: uppercase;
 	text-decoration: none;
 	border: 3px solid;
-	color: #252525;
+	color: var(--black_um);
+	padding: 10px 20px;
 }
 
 /* Assine */
 
 .assine {
-	background: #e7e4d8;
+	background: var(--color_secundary);
+	padding: 30px 0;
 }
 
 .assine-info h2 {
@@ -169,30 +227,63 @@ h2.produtos-mineiro::before {
 }
 
 .assine input {
-	border: 3px solid #252525;
+	border: 3px solid var(--black_um);
 	background: none;
 	font-size: 1.5em;
 	font-style: italic;
 	font-family: Georgia, serif;
+	width: calc(100% - 140px);
+	padding: 10px;
+	float: left;
 }
 
 .assine button {
-	background: #252525;
+	background: var(--black_um);
 	border: none;
 	font-family: Georgia, serif;
 	text-transform: uppercase;
 	font-size: 1.5em;
-	color: #fff;
+	color: var(--white_normal);
 	cursor: pointer;
+	width: 140px;
+	padding: 13px 0;
 }
 
 /*Footer*/
 
 .footer {
 	background: #d6d3c8;
+	padding: 40px 0;
 }
 
 .footer p {
 	font-size: 1.125em;
 	line-height: 1.4em;
+}
+
+.footer img {
+	float: right;
+}
+
+
+
+@media (max-width: 739px) {
+	.menu-nav ul {
+		float: none;
+	}
+
+	.menu-nav ul li a {
+		margin-left: 0;
+		padding-left: 0;
+		padding-right: 8px;
+	}
+
+	.intro {
+		padding: 60px 0;
+	}
+
+	.footer img {
+		float: none;
+		margin-top: 20px;
+	}
 }
